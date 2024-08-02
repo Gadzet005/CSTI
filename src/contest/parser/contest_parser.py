@@ -21,7 +21,8 @@ class ContestParser(object):
 			raise CantParseElement("session id")
 		
 		return sessionIdMatches[0]
-
+ 
+	# TODO: Падает на githubclassrom
 	@staticmethod
 	def getHomework(localContestId: int) -> tuple[int, map]:
 		response = requests.get(HOME_URL, timeout=REQUEST_TIME_LIMIT)
