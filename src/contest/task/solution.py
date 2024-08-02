@@ -2,7 +2,7 @@ from dataclasses import dataclass
 from enum import Enum
 
 
-class TaskStatus(Enum):
+class SolutionStatus(Enum):
 	accepted_for_review = "Принято на проверку"
 	wrang_answer = "Неправильный ответ"
 	compilation_error = "Ошибка компиляции"
@@ -12,8 +12,8 @@ class TaskStatus(Enum):
 
 
 @dataclass
-class TaskStatusInfo:
-	solutionId: int
-	status: None
+class Solution:
+	id_: int
+	status: SolutionStatus
 	testsPassed: int
 
