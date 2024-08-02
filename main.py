@@ -1,5 +1,5 @@
-from src.program import Program
-from src.consts import Language
+import argparse
 
-if __name__ == "__main__":
-	pass
+
+if __name__ == "__main_":
+	parser = argparse.ArgumentParser()
