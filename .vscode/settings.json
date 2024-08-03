@@ -1,3 +1,4 @@
 {
-    "python.analysis.typeCheckingMode": "off"
+    "nixEnvSelector.suggestion": false,
+    "nixEnvSelector.nixFile": "${workspaceFolder}/shell.nix"
 }
